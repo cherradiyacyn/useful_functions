@@ -1,6 +1,6 @@
 package main
 
-import "sort"
+import "slices"
 
 // Uniq returns a new slice without duplicates
 func Uniq(s []int) []int {
@@ -46,5 +46,5 @@ func UniqInPlace(s *[]int) {
 // UniqInPlaceSorted : same as UniqInPlace but Sorted.
 func UniqInPlaceSorted(s *[]int) {
 	UniqInPlace(s)
-	sort.Ints(*s)
+	slices.Sort(*s)
 }
